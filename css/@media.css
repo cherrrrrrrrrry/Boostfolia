@@ -1,0 +1,121 @@
+@media only screen and (max-width: 850px) {
+	header {
+		background-color: #171f22;
+		justify-content: space-between;
+		display: flex;
+	}
+
+	.header-logo {
+		width: 100%;
+	}
+
+	.menu a {
+		display: none;
+		padding: 10px;
+	}
+
+	.menu a:hover {
+		border: none;
+	}
+
+	.menu .icon {
+		display: block;
+		color: white;
+		font-size: 1.75em;
+	}
+
+	header .responsive {
+		background-color: #171f22;
+		position: absolute;
+		width: 100%;
+		top: 90.5px;
+		transition: .5s;
+	}
+
+	header.sticky .responsive {
+		top: 62.5px;
+	}
+
+	.responsive a {
+		display: block;
+		text-align: left;
+	}
+
+	header .responsive .icon {
+		transition: .25s;
+		position: fixed;
+		right: 2.5px;
+		top: 0px;
+		background-color: #f54f29;
+	}
+
+	header.sticky .responsive .icon {
+		font-size: 1.5em;
+	}
+
+	.about .about-items,
+	.watch .watch-items,
+	.blog .blog-items {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.about-items .about-item,
+	.blog .blog-item,
+	.plans .plans-item {
+		margin: 10px 0;
+	}
+
+	.features .features-items,
+	.plans .plans-items {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.features-items .features-item {
+		margin: 0;
+	}
+
+	.header-logo-mob,
+	.menu-mob,
+	.home-mob .inner,
+	.about-mob h2,
+	.about-mob hr,
+	.about-mob p,
+	.about-mob .about-item,
+	.watch-mob .left,
+	.watch-mob .right,
+	.portfolio-mob h2,
+	.portfolio-mob hr,
+	.portfolio-mob p,
+	.portfolio-mob .slider-dots,
+	.features-mob h2,
+	.features-mob hr,
+	.features-mob .features-items,
+	.blog-mob h2,
+	.blog-mob hr,
+	.blog-mob p,
+	.blog-mob .blog-item,
+	.plans-mob h2,
+	.plans-mob hr,
+	.plans-mob .plans-item,
+	.feedback-mob h2,
+	.feedback-mob hr,
+	.feedback-mob p,
+	.feedback-mob form,
+	.footer-mob .footer-logo,
+	.footer-mob hr,
+	.footer-mob .social {
+		transition-property: none !important;
+		transform: none !important;
+		animation: none !important;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.features .features-items,
+	.plans .plans-items {
+		display: grid;
+		grid-template-columns: auto !important;
+	}
+}

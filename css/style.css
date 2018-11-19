@@ -1,0 +1,576 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	color: #f54f29;
+	font-size: 4em;
+}
+
+.about h2,
+.portfolio h2,
+.blog h2,
+.feedback h2 {
+	font-family: 'Anton', sans-serif;
+	color: #171f22;
+	text-transform: uppercase;
+	font-size: 3.5em;
+}
+
+.watch h2,
+.features h2,
+.plans h2 {
+	font-family: 'Anton', sans-serif;
+	font-size: 3.5em;
+	color: #d5d3d6;
+	text-transform: uppercase;
+}
+
+.orange {
+	color: #f54f29;
+}
+
+hr {
+	height: 3px;
+	background-color: #f54f29;
+	border: none;
+	margin: 10px 45%;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.about p,
+.portfolio p,
+.blog .text,
+.feedback .text {
+	padding-bottom: 15px;
+	margin: 25px 0;
+	color: #3c3c3c;
+}
+
+#toTop {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+	display: none;
+}
+
+#toTop:hover {
+	opacity: .75;
+}
+
+.to-top img {
+	width: 50px;
+}
+
+
+/*
+hr,
+.about h2,
+.about p,
+.about about-item,
+.watch .left,
+.watch .right,
+.portfolio h2,
+.portfolio .slider-dots,
+.features h2,
+.features .features-items,
+.blog .blog-item,
+.plans .plans-item,
+.feedback h2,
+.feedback p,
+.feedback form,
+footer .footer-logo,
+footer img {
+	animation-delay: .25s !important;
+}
+*/
+
+body {
+	overflow-x: hidden;
+	font-family: 'Bree Serif', serif;
+	width: 100%;
+	background-color: #171f22;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Anton', sans-serif;
+}
+
+header.sticky {
+	position: fixed;
+	height: 65px;
+	transition: .5s;
+	background-color: rgb(23, 31, 34);
+	z-index: 9999;
+}
+
+header .header-logo .logo,
+footer .footer-logo .logo {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: #d5d3d6;
+	font-family: 'Anton', sans-serif;
+}
+
+header.sticky .header-logo .logo {
+	color: #f54f29;
+}
+
+header .header-logo .logo-img,
+footer .footer-logo .logo-img {
+	display: inline;
+	margin-bottom: -10px;
+}
+
+header.sticky .header-logo .logo-img {
+	display: none;
+}
+
+header .header-logo .logo-scroll-img {
+	display: none;
+}
+
+header.sticky .header-logo .logo-scroll-img {
+	display: inline;
+	margin-bottom: -10px;
+}
+
+header nav a {
+	padding: 5px;
+	color: #d5d3d6;
+	font-size: 1.5em;
+	border-bottom: 3px solid transparent;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 5px;
+}
+
+header nav a:hover {
+	border-color: #f54f29;
+	transition: .25s;
+}
+
+header nav .icon {
+	display: none;
+}
+
+/*Блок №1*/
+main .home {
+	/*	background-image: url(../img/bckgrnd.jpg);	*/
+	padding: 300px 0 30px 0;
+	text-align: center;
+}
+
+.home p {
+	color: #d5d3d6;
+	font-size: 2em;
+	text-decoration: underline;
+	margin-bottom: 190px;
+}
+
+.home .scroll {
+	text-transform: uppercase;
+	color: #d5d3d6;
+}
+
+.home .scroll:hover {
+	opacity: .5;
+	transition: .25s;
+	cursor: pointer;
+}
+
+.home .scroll img {
+	margin-bottom: -5px;
+}
+
+/*Блок №2*/
+main .about {
+	text-align: center;
+	padding: 100px 0;
+	background-color: white;
+}
+
+main .about .text {
+	color: #171f22;
+}
+
+.about .about-items {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about-items .about-item {
+	background-color: #ebebeb;
+	margin: 0 10px;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+.about-item h3 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #171f22;
+}
+
+/*Блок №3*/
+main .watch {
+	width: 100%;
+}
+
+.watch .watch-items {
+	justify-content: space-between;
+	display: flex;
+}
+
+.watch-items .left {
+	background-color: #171f22;
+}
+
+.watch-items .right {
+	background-color: #f54f29;
+}
+
+.watch-items .watch-item {
+	text-align: center;
+	color: #d5d3d6;
+	padding: 100px 2.5vw;
+}
+
+.watch-item p {
+	padding: 25px 0;
+}
+
+.watch-item button {
+	border: none;
+	margin: 50px 0 0 0;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #d5d3d6;
+	border-radius: 5px;
+}
+
+.watch-items .left button {
+	background-color: #f54f29;
+}
+
+.watch-items .right button {
+	background-color: #171f22;
+}
+
+.watch-item button:hover {
+	cursor: pointer;
+	transition: .25s;
+	text-decoration: underline;
+	animation: pulse .5s linear infinite;
+}
+
+.watch .left button:hover {
+	background-color: rgb(245, 45, 0);
+}
+
+.watch .right button:hover {
+	background-color: rgb(0, 25, 30);
+}
+
+/*Блок №4*/
+main .portfolio {
+	text-align: center;
+	padding: 100px 0;
+	background-color: white;
+}
+
+.portfolio .slider {
+	margin: 50px 0 0 0;
+}
+
+.slider .slider-item {
+	animation: fadeIn .5s linear;
+}
+
+.slider-item img {
+	width: 100%;
+}
+
+.slider .slider-dots .dot {
+	display: inline-block;
+	color: #171f22;
+	border-bottom: 3px solid transparent;
+	padding: 5px;
+	margin: 25px 10px;
+	font-size: 1.25em;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.slider .slider-dots .dot:hover {
+	border-color: #f54f29;
+	transition: .25s;
+}
+
+.slider .slider-dots .dot-active {
+	border-color: #f54f29;
+	color: #f54f29;
+	transition: .25s;
+}
+
+.slider .prev-next {
+	display: none;
+}
+
+/*Блок №5*/
+main .features {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.features .features-items {
+	display: flex;
+	justify-content: space-around;
+}
+
+.features-items .features-item {
+	margin: 50px 0;
+	padding: 25px;
+	border-radius: 5px;
+}
+
+.features-item h3 {
+	color: #d5d3d6;
+	text-transform: uppercase;
+}
+
+.features-item span {
+	font-size: 4em;
+	color: #f54f29;
+}
+
+/*Блок №6*/
+main .blog {
+	background-color: white;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.blog .blog-items {
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-around;
+}
+
+.blog-items .blog-item {
+	margin: 0 10px;
+	padding: 0 0 25px 0;
+	text-align: left;
+	background-color: #ebebeb;
+}
+
+.blog-item .post-img {
+	overflow: hidden;
+}
+
+.blog-item .post-img img {
+	width: 100%;
+}
+
+.blog-item h3,
+.blog-item p,
+.blog-item span {
+	color: #3c3c3c;
+	padding: 5px 20px;
+}
+
+.blog-item h3:hover {
+	color: #f54f29;
+	cursor: pointer;
+	transition: .25s;
+}
+
+.blog-item .icons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog-item span {
+	margin: 50px 0 0 0;
+	display: block;
+}
+
+.blog-item .date {
+	text-decoration: underline;
+}
+
+.blog-item .date img {
+	margin: 0 5px -5px 0;
+	width: 20px;
+}
+
+.blog-item .views img {
+	width: 20px;
+	margin: 0 5px -2px 0;
+}
+
+/*Блок №7*/
+main .plans {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.plans .plans-items {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 0 0 0;
+}
+
+.plans-items .plans-item {
+	border-radius: 5px;
+	border: 3px solid #f54f29;
+	padding: 25px 15px;
+	color: white;
+	font-family: 'Bree Serif', serif;
+}
+
+.plans-item h3 {
+	font-size: 2.5em;
+	border-bottom: 3px solid #f54f29;
+	padding: 10px;
+}
+
+.plans-item ul {
+	padding: 50px 0;
+	line-height: 44px;
+	font-size: 1.25em;
+}
+
+.plans-item button {
+	background-color: #f54f29;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.plans-item button:hover {
+	animation: pulse .5s linear infinite;
+	cursor: pointer;
+	background-color: rgb(245, 45, 0);
+	transition: .25s;
+	text-decoration: underline;
+}
+
+/*Блок №8*/
+main .feedback {
+	padding: 100px 0;
+	background-color: white;
+	text-align: center;
+}
+
+.feedback form .form-group {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.feedback form input,
+.feedback form label,
+.feedback form textarea {
+	display: block;
+	text-align: left;
+}
+
+.feedback form label {
+	font-size: 1.5em;
+	color: #f54f29;
+	padding: 0 0 10px 0;
+}
+
+.feedback form input[type="text"] {
+	width: 30vw;
+	font-family: 'Bree Serif', serif;
+	height: 40px;
+	border: none;
+	padding: 0 5px;
+	font-size: 1.25em;
+	border-bottom: 2px solid #808080;
+	color: #303030;
+}
+
+.feedback form input[type="text"]:focus {
+	border-color: #f54f29;
+	transition: .5s;
+}
+
+.feedback form textarea {
+	color: #303030;
+	width: 100%;
+	font-size: 1.25em;
+	font-family: 'Bree Serif', serif;
+	height: 200px;
+	resize: none;
+	border: none;
+	border-bottom: 2px solid #808080;
+	padding: 0 5px;
+}
+
+.feedback form textarea:focus {
+	border-color: #f54f29;
+	transition: .5s;
+}
+
+.feedback form input[type="submit"] {
+	color: white;
+	background-color: #f54f29;
+	padding: 10px 25px;
+	border: none;
+	float: right;
+	margin: 25px 0;
+	border-radius: 5px;
+}
+
+.feedback form input[type="submit"]:hover {
+	text-decoration: underline;
+	background-color: rgb(245, 45, 0);
+	transition: .5s;
+	cursor: pointer;
+}
+
+footer {
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+footer .footer-logo {
+	padding-bottom: 25px;
+	margin-right: 5%;
+}
+
+footer .social {
+	margin: 25px 0;
+}
+
+footer .social img {
+	width: 30px;
+	cursor: pointer;
+}
